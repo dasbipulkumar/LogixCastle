@@ -10,9 +10,10 @@ object RuntimeUtil {
   def runtime(f: Int => Long) = {
 
     val startTime = System.currentTimeMillis()
-    f(45)
+    val result = f(50)
     val endTime = System.currentTimeMillis()
 
+    println("Result :: " + result)
     println("Total Time taken for "+ f.toString() +" :: " + (endTime - startTime))
   }
 
