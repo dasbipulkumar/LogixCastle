@@ -24,5 +24,16 @@
                                     
                  ** Since the longest possible path without a cycle can be |V|-1 edges, the edges must be scanned | V | − 1  times to ensure the shortest path has been found for all nodes                               
                  Running Time is O(mn) in case of  sparse graph and O(n3) in case od dense graph
+                 
+                                3                
+                        >(1)- - - - ->(3)
+                    1 /             /> |
+                    /             /    | 
+                 (0)           2/      | 8
+                    \         /        |
+                   4  \     /          |> 
+                        >(2)---------->(4)
+                                6
+                 
                                                
                             
