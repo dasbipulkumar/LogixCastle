@@ -33,9 +33,10 @@ object Knapsac01kBottomUp {
           }
 
         }
+          print(matrix(i)(j) + " ")
 
       }
-
+      println("")
     }
 
     println(matrix({value.length})(knapsackMaxWeight))
