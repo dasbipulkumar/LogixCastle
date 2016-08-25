@@ -1,7 +1,6 @@
+#**0-1 Knapsack problem**
+
 ##Bottom Up
-
-
-**0-1 Knapsack problem**
 
                         0    1   2   3   4   5   6   7   8   9   10
                    
@@ -25,4 +24,24 @@
                     matrix(i)(j) = matrix(i - 1)(j)
         
                   }
+
         
+        
+        
+## Top Down
+        
+        
+        
+        wt[] = {1, 1, 1}, W = 2, val[] = {10, 20, 30}
+        
+                               K(3, 2)         ---------> K(n, W)
+                           /            \ 
+                         /                \               
+                    K(2,2)                  K(2,1)
+                  /       \                  /    \ 
+                /           \              /        \
+               K(1,2)      K(1,1)        K(1,1)     K(1,0)
+               /  \         /   \          /   \
+             /      \     /       \      /       \
+        K(0,2)  K(0,1)  K(0,1)  K(0,0)  K(0,1)   K(0,0)
+        Recursion tree for Knapsack capacity 2 units and 3 items of 1 unit weight.
