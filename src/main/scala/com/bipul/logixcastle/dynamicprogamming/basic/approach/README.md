@@ -15,3 +15,14 @@
                    
         (50,4)   4      0    0   0  50  50  50  50   90  90  90  90
         
+         if (j - weight(i - 1) >= 0) {
+        
+                    matrix(i)(j) = Math.max(matrix(i - 1)(j), matrix(i - 1)(j - weight(i - 1)) + value(i - 1))
+        
+                  }
+                  else {
+        
+                    matrix(i)(j) = matrix(i - 1)(j)
+        
+                  }
+        

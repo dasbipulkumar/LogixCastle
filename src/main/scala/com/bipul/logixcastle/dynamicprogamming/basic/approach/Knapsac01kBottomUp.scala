@@ -23,12 +23,12 @@ object Knapsac01kBottomUp {
 
           if (j - weight(i - 1) >= 0) {
 
-            matrix(i)(j) = Math.max(matrix(i - 1)(j), matrix(i - 1)(j - weight(i - 1)) + value(i - 1)) //include the item
+            matrix(i)(j) = Math.max(matrix(i - 1)(j), matrix(i - 1)(j - weight(i - 1)) + value(i - 1))
 
           }
           else {
 
-            matrix(i)(j) = matrix(i - 1)(j) //exclude the item
+            matrix(i)(j) = matrix(i - 1)(j)
 
           }
 
@@ -47,7 +47,7 @@ object Knapsac01kBottomUp {
 
     val value = Array(10,40,30,50)
     val weight = Array(5,4,6,3)
-    val maxKnapsackWeight = 10
+    val maxKnapsackWeight = 6
 
     solveKnapsack(value,weight,maxKnapsackWeight)
 
