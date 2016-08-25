@@ -5,8 +5,8 @@ package com.bipul.logixcastle.dynamicprogamming.basic.overlappingsubproblem
   */
 object FibonacciWithNormalRecursion {
 
-  def fibonacci(limit: Int): (Int) = {
-   // println(limit)
+  def fibonacci(limit: Int): Long = {
+    // println(limit)
     if (limit <= 1)
       limit
     else
