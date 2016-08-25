@@ -1,4 +1,4 @@
-package com.bipul.logixcastle.dynamicprogamming.basic.com.bipul.logixcastle.dynamicprogamming.approach
+package com.bipul.logixcastle.dynamicprogamming.basic.approach
 
 /**
   * Created by bipulk on 8/25/16.
